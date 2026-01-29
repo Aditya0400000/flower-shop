@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior:smooth ;
+}
+.header{
+    background-image: url(images/hero.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;   
+}
+
+nav{
+    padding: 2% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: darkorchid;
+}
+
+.nav-links{
+    text-align: right;
+    flex: 1;
+}
+.nav-links ul li{
+    display: inline-block;
+    padding: 8px 12px;
+    list-style: none;
+  
+}
+.nav-links ul li a{
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 600;
+}
+nav .fa{
+    font-size: 20px;
+    display: none;
+    color: black;
+}
+
+.text-box{
+    margin-top: 50px;
+    padding-left: 20px;
+    width: 80%;
+    transform: translate(-50% -50%);
+}
+.text-box h2{
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+.text-box p{
+    width: 60%;
+    font-size: 23px;
+    padding-left: 20px;
+}
+
+/* PRODUCT SECTION */
+.item-section{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+   
+    
+}
+.item-section h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+.item-section .product .product-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF5EE;
+    margin: 10px;  
+    padding: 20px 20px 0 20px;
+    box-shadow: 80px 70px 80px 80px rgba(0, 0, 0, 0.3);
+}
+
+.item-section .product .product-list img{
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    background-position: cover;
+    background: cover;
+    position: relative;
+    transition: 0.5s;
+}
+.item-section .product .product-list img:hover{
+    transform: scale(1.1);
+    
+}
+
+
+.product .product-list ul{
+    margin: 30px;
+    padding-bottom: 30px;
+}
+
+.item-section .product .product-list ul li{
+    list-style: none;
+}
+.product .product-list ul li button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    background-color: antiquewhite;
+    transition: 0.4s;
+}
+.product .product-list ul li button:hover{
+    background-color: brown;
+    transform: scale(1.01);
+    color: #fff;
+}
+
+.view-items-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+   
+}
+.view-items-btn button{
+    padding: 8px 12px;
+    width: 200px;
+    background-color: antiquewhite;
+    position: absolute;
+    border: black;
+}
+.view-items-btn button a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    transition: 0.4s;  
+}
+.view-items-btn button:hover{
+    background-color: brown;
+    border: 1px solid brown;
+    transform: scale(1.01);
+    color: #fff;
+}
+/* TESTIMONIALS */
+
+.testimonials h2{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.testimonials .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.testimonials .row .cards{
+    margin: 20px;
+    padding: 20px;
+    background-color: bisque;
+    border-radius: 16px 0 16px 0;
+}
+.testimonials .row .cards img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+/* ABOUT SECTION */
+.about-section h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+.about-box{
+    background-image: url(images/about1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: right;
+    border-radius: 0 100px 0 100px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.about-columns .about-box h3{
+    font-size: 50px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    padding-right: 100px;
+}
+.about-columns .about-box p{
+    width: 800px;
+    font-size: 23px;
+    padding-right: 100px;
+}
+
+.about-section .about-columns .about-box2{
+    background-image: url(images/about3.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 100px;
+    border-radius: 100px 0 100px 0;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.about-section .about-columns .about-box2 h3{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    padding-right: 100px;
+    padding-left: 20px;
+    font-size: 50px;
+}
+.about-section .about-columns .about-box2 p{
+    padding-left: 20px;
+    font-size: 23px;
+    padding-right: 800px;
+    
+}
+
+/* Contact Us */
+
+.contact-section h2{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.contact-section .contact-info ul{
+    padding: 50px;
+}
+.contact-section .contact-info ul li{
+    padding: 10px;
+    list-style: none;
+}
+.contact-section .contact-info ul li i{
+    padding-right: 5px;
+}
+.contact-section .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-section .contact-info form{
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    gap: 30px;
+    padding-left: 20px;
+    width: 600px;
+}
+.contact-section .contact-info form .form-input{
+   padding: 8px 12px;
+   width: 100%;
+   height: 50px;
+   border: 1px solid black;
+}
+.contact-section .contact-info form button{
+    width: 100px;
+    padding: 8px 12px;
+    background-color: bisque;
+    color: #000;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.contact-section .contact-info form button:hover{
+    background-color: brown;
+    color: #fff;
+}
+
+/* FOOTER SECTION */
+.footer-section .footer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(183, 243, 183);
+    padding: 20px;
+}
+.footer-section .footer ul li{
+    list-style: none;
+}
+.footer-section .footer .foot-logo h2{
+    color: darkorchid;
+    padding-bottom: 10px;  
+}
+.footer-section .footer .foot-logo h2 a{
+ text-decoration: none;
+}
+.footer-section .footer .foot-logo ul li{
+    padding-left: 5px;
+    font-weight: 600;
+}
+.footer-section .footer .foot-contents ul li a{
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+.footer-section .footer .footer-links {
+    cursor: pointer;
+}
+
+
+
+@media(max-width: 700px){
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        background-color: antiquewhite;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        font-size: 20px;
+        padding: 20px;
+        text-align: left;
+        cursor: pointer;
+    }
+    .nav-links ul li{
+        text-align: left;
+        padding-left: 20px;
+        
+    }
+
+    .text-box{
+        margin-top: 30px;
+    }
+
+    .text-box h2{
+        font-size: 25px;
+    }
+    .text-box p{
+        width: auto;
+        font-size: 15px;
+    }
+
+    .item-section .product .product-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;  
+}
+.item-section .product .product-list img{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background-position: cover;
+    background: cover;
+    position: relative;
+}
+.testimonials .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+    .about-columns .about-box h3{
+     font-size: 30px;
+     padding-top: 40px;
+     padding-bottom: 10px;
+    }
+    .about-columns .about-box p{
+     width: auto;
+     font-size: 15px;
+     padding-right: 30px;
+     padding-left: 40px;
+     
+    }
+    .about-section .about-columns .about-box2 h3{
+        font-size: 30px;
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    .about-section .about-columns .about-box2 p{
+        font-size: 15px;
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px ;
+    }
+
+    .contact-section .contact-info {
+     display: flex;
+     flex-direction: column-reverse;
+     align-items: center;
+}
+
+    .contact-section .contact-info form{
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    gap: 30px;
+    padding-left: 20px;
+    width: 350px;
+}
+.contact-section .contact-info form textarea{
+   padding: 8px 12px;
+   width: 300px;
+   height: 50px;
+   border: 1px solid black;
+}
+.contact-section .contact-info ul{
+    margin-top: 40px;
+    padding: 30px;
+    font-size: 14px;
+}
+.contact-section .contact-info ul li i{
+    padding-right: 5px;
+}
+.footer-section .footer{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-top: 40px;
+    
+}
+.footer-section .footer .foot-logo ul li a{
+    padding-left: 8px;
+}
+}
